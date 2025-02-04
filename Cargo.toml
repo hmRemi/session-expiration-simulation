@@ -3,9 +3,21 @@ name = "session-expiration-simulation"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "session_monitor"
+path = "src/lib.rs"
+
+[[bin]]
+name = "session-expiration-simulation"
+path = "src/main.rs"
+
 [dependencies]
 dotenv = "0.15.0"
 fantoccini = "0.21.4"
 tokio = { version = "1", features = ["full"] }
 reqwest = { version = "0.12.12", features = ["cookies"] }
 serde_json = "1.0.137"
+chrono = "0.4.39"
+colored = "3.0.0"
+thiserror = "1.0.69"
+url = "2.5.4"

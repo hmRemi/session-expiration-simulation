@@ -1,1 +1,23 @@
-/target
+# Cargo files
+/target/
+*.rs.bk
+Cargo.lock
+
+# .env files
+.env
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Backup and temporary files
+*~
+*.swp
+*.bak
+*.tmp
+
+# Rust-specific files
+*.dSYM
+*.out
